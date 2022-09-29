@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-min.js"></script>
+    <script src="Underscore.js"></script>
+    <script src="backbone-min.js"></script>
+
+    <script src="42.2_model.js"></script>
+
+
+    <link rel="stylesheet" href="42.1_backbone.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Backbone js</h1>
+    </header>
+    <section>
+
+        <div class="navbar">
+            <button id="Register_Student">Register Student</button>
+            <button id="All_Student">All Student</button>
+        </div>
+
+        <div class="container" id="container1">
+            Student Name : <input type="text" name="" id="Student_Name"> <br>
+            Father Name : <input type="text" name="" id="Father_Name"><br>
+            Mother Name : <input type="text" name="" id="Mother_Name"><br>
+            Gender : Male <input type="radio" name="gender" value="male"> Female <input type="radio" name="gender"
+                value="female"><br>
+            Date of Birth : <input type="date" name="dob" id="dob"><br>
+            <button id="Create_Student_Model">Register</button><br>
+            <button id="update_student" style="display: none;">Update Student</button>
+        </div>
+
+        <div id="msg"></div>
+
+        <div class="container" id="container2">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Student id</th>
+                        <th>Student Name</th>
+                        <th>Father Name</th>
+                        <th>Mother Name</th>
+                        <th>Gender</th>
+                        <th>DOB</th>
+                        <th colspan="2">Update Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+
+    </section>
+</body>
+
+</html>
